@@ -25,18 +25,25 @@ Partial Class Program2
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Program2))
         Me.lstTransactions = New System.Windows.Forms.ListBox()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.txtExchange = New System.Windows.Forms.TextBox()
         Me.label4 = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.label3 = New System.Windows.Forms.Label()
         Me.label2 = New System.Windows.Forms.Label()
-        Me.cmbCurrencyP = New System.Windows.Forms.ComboBox()
-        Me.cmbCurrencyA = New System.Windows.Forms.ComboBox()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.UAH1 = New System.Windows.Forms.RadioButton()
+        Me.YEN1 = New System.Windows.Forms.RadioButton()
+        Me.EURO1 = New System.Windows.Forms.RadioButton()
+        Me.USD1 = New System.Windows.Forms.RadioButton()
+        Me.UAH2 = New System.Windows.Forms.RadioButton()
+        Me.YEN2 = New System.Windows.Forms.RadioButton()
+        Me.EURO2 = New System.Windows.Forms.RadioButton()
+        Me.USD2 = New System.Windows.Forms.RadioButton()
+        Me.GBP1 = New System.Windows.Forms.RadioButton()
+        Me.GBP2 = New System.Windows.Forms.RadioButton()
+        Me.Change = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,29 +58,19 @@ Partial Class Program2
         'btnSave
         '
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(337, 383)
+        Me.btnSave.Location = New System.Drawing.Point(295, 383)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(104, 32)
+        Me.btnSave.Size = New System.Drawing.Size(152, 32)
         Me.btnSave.TabIndex = 46
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'btnCalculate
-        '
-        Me.btnCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(187, 383)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(104, 32)
-        Me.btnCalculate.TabIndex = 45
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
-        '
         'btnReset
         '
         Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.Location = New System.Drawing.Point(33, 383)
+        Me.btnReset.Location = New System.Drawing.Point(111, 383)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(104, 32)
+        Me.btnReset.Size = New System.Drawing.Size(145, 32)
         Me.btnReset.TabIndex = 44
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
@@ -87,13 +84,6 @@ Partial Class Program2
         Me.btnQuit.TabIndex = 43
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
-        '
-        'txtExchange
-        '
-        Me.txtExchange.Location = New System.Drawing.Point(263, 260)
-        Me.txtExchange.Name = "txtExchange"
-        Me.txtExchange.Size = New System.Drawing.Size(158, 20)
-        Me.txtExchange.TabIndex = 42
         '
         'label4
         '
@@ -126,35 +116,17 @@ Partial Class Program2
         '
         Me.label2.AutoSize = True
         Me.label2.Font = New System.Drawing.Font("Microsoft Himalaya", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label2.Location = New System.Drawing.Point(358, 101)
+        Me.label2.Location = New System.Drawing.Point(360, 63)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(37, 29)
         Me.label2.TabIndex = 38
         Me.label2.Text = "To"
         '
-        'cmbCurrencyP
-        '
-        Me.cmbCurrencyP.FormattingEnabled = True
-        Me.cmbCurrencyP.Items.AddRange(New Object() {"USD", "EURO", "YEN", "UAH", "GBP"})
-        Me.cmbCurrencyP.Location = New System.Drawing.Point(203, 104)
-        Me.cmbCurrencyP.Name = "cmbCurrencyP"
-        Me.cmbCurrencyP.Size = New System.Drawing.Size(121, 21)
-        Me.cmbCurrencyP.TabIndex = 37
-        '
-        'cmbCurrencyA
-        '
-        Me.cmbCurrencyA.FormattingEnabled = True
-        Me.cmbCurrencyA.Items.AddRange(New Object() {"USD", "EURO", "YEN", "UAH", "GBP"})
-        Me.cmbCurrencyA.Location = New System.Drawing.Point(422, 104)
-        Me.cmbCurrencyA.Name = "cmbCurrencyA"
-        Me.cmbCurrencyA.Size = New System.Drawing.Size(121, 21)
-        Me.cmbCurrencyA.TabIndex = 36
-        '
         'label1
         '
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Himalaya", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(58, 101)
+        Me.label1.Location = New System.Drawing.Point(38, 63)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(94, 29)
         Me.label1.TabIndex = 35
@@ -170,23 +142,149 @@ Partial Class Program2
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False
         '
+        'UAH1
+        '
+        Me.UAH1.AutoSize = True
+        Me.UAH1.Location = New System.Drawing.Point(412, 102)
+        Me.UAH1.Name = "UAH1"
+        Me.UAH1.Size = New System.Drawing.Size(48, 17)
+        Me.UAH1.TabIndex = 51
+        Me.UAH1.TabStop = True
+        Me.UAH1.Text = "UAH"
+        Me.UAH1.UseVisualStyleBackColor = True
+        '
+        'YEN1
+        '
+        Me.YEN1.AutoSize = True
+        Me.YEN1.Location = New System.Drawing.Point(412, 79)
+        Me.YEN1.Name = "YEN1"
+        Me.YEN1.Size = New System.Drawing.Size(47, 17)
+        Me.YEN1.TabIndex = 50
+        Me.YEN1.TabStop = True
+        Me.YEN1.Text = "YEN"
+        Me.YEN1.UseVisualStyleBackColor = True
+        '
+        'EURO1
+        '
+        Me.EURO1.AutoSize = True
+        Me.EURO1.Location = New System.Drawing.Point(412, 57)
+        Me.EURO1.Name = "EURO1"
+        Me.EURO1.Size = New System.Drawing.Size(56, 17)
+        Me.EURO1.TabIndex = 49
+        Me.EURO1.TabStop = True
+        Me.EURO1.Text = "EURO"
+        Me.EURO1.UseVisualStyleBackColor = True
+        '
+        'USD1
+        '
+        Me.USD1.AutoSize = True
+        Me.USD1.Location = New System.Drawing.Point(412, 34)
+        Me.USD1.Name = "USD1"
+        Me.USD1.Size = New System.Drawing.Size(48, 17)
+        Me.USD1.TabIndex = 48
+        Me.USD1.TabStop = True
+        Me.USD1.Text = "USD"
+        Me.USD1.UseVisualStyleBackColor = True
+        '
+        'UAH2
+        '
+        Me.UAH2.AutoSize = True
+        Me.UAH2.Location = New System.Drawing.Point(138, 102)
+        Me.UAH2.Name = "UAH2"
+        Me.UAH2.Size = New System.Drawing.Size(48, 17)
+        Me.UAH2.TabIndex = 55
+        Me.UAH2.TabStop = True
+        Me.UAH2.Text = "UAH"
+        Me.UAH2.UseVisualStyleBackColor = True
+        '
+        'YEN2
+        '
+        Me.YEN2.AutoSize = True
+        Me.YEN2.Location = New System.Drawing.Point(138, 79)
+        Me.YEN2.Name = "YEN2"
+        Me.YEN2.Size = New System.Drawing.Size(47, 17)
+        Me.YEN2.TabIndex = 54
+        Me.YEN2.TabStop = True
+        Me.YEN2.Text = "YEN"
+        Me.YEN2.UseVisualStyleBackColor = True
+        '
+        'EURO2
+        '
+        Me.EURO2.AutoSize = True
+        Me.EURO2.Location = New System.Drawing.Point(138, 57)
+        Me.EURO2.Name = "EURO2"
+        Me.EURO2.Size = New System.Drawing.Size(56, 17)
+        Me.EURO2.TabIndex = 53
+        Me.EURO2.TabStop = True
+        Me.EURO2.Text = "EURO"
+        Me.EURO2.UseVisualStyleBackColor = True
+        '
+        'USD2
+        '
+        Me.USD2.AutoSize = True
+        Me.USD2.Location = New System.Drawing.Point(138, 34)
+        Me.USD2.Name = "USD2"
+        Me.USD2.Size = New System.Drawing.Size(48, 17)
+        Me.USD2.TabIndex = 52
+        Me.USD2.TabStop = True
+        Me.USD2.Text = "USD"
+        Me.USD2.UseVisualStyleBackColor = True
+        '
+        'GBP1
+        '
+        Me.GBP1.AutoSize = True
+        Me.GBP1.Location = New System.Drawing.Point(412, 125)
+        Me.GBP1.Name = "GBP1"
+        Me.GBP1.Size = New System.Drawing.Size(47, 17)
+        Me.GBP1.TabIndex = 56
+        Me.GBP1.TabStop = True
+        Me.GBP1.Text = "GBP"
+        Me.GBP1.UseVisualStyleBackColor = True
+        '
+        'GBP2
+        '
+        Me.GBP2.AutoSize = True
+        Me.GBP2.Location = New System.Drawing.Point(138, 125)
+        Me.GBP2.Name = "GBP2"
+        Me.GBP2.Size = New System.Drawing.Size(47, 17)
+        Me.GBP2.TabIndex = 57
+        Me.GBP2.TabStop = True
+        Me.GBP2.Text = "GBP"
+        Me.GBP2.UseVisualStyleBackColor = True
+        '
+        'Change
+        '
+        Me.Change.AutoSize = True
+        Me.Change.Font = New System.Drawing.Font("Microsoft Himalaya", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Change.Location = New System.Drawing.Point(256, 260)
+        Me.Change.Name = "Change"
+        Me.Change.Size = New System.Drawing.Size(0, 37)
+        Me.Change.TabIndex = 58
+        '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Change)
+        Me.Controls.Add(Me.GBP2)
+        Me.Controls.Add(Me.GBP1)
+        Me.Controls.Add(Me.UAH2)
+        Me.Controls.Add(Me.YEN2)
+        Me.Controls.Add(Me.EURO2)
+        Me.Controls.Add(Me.USD2)
+        Me.Controls.Add(Me.UAH1)
+        Me.Controls.Add(Me.YEN1)
+        Me.Controls.Add(Me.EURO1)
+        Me.Controls.Add(Me.USD1)
         Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.txtExchange)
         Me.Controls.Add(Me.label4)
         Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.label3)
         Me.Controls.Add(Me.label2)
-        Me.Controls.Add(Me.cmbCurrencyP)
-        Me.Controls.Add(Me.cmbCurrencyA)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Program2"
@@ -199,16 +297,23 @@ Partial Class Program2
 
     Friend WithEvents lstTransactions As ListBox
     Friend WithEvents btnSave As Button
-    Friend WithEvents btnCalculate As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents btnQuit As Button
-    Friend WithEvents txtExchange As TextBox
     Friend WithEvents label4 As Label
     Friend WithEvents txtAmount As TextBox
     Friend WithEvents label3 As Label
     Friend WithEvents label2 As Label
-    Friend WithEvents cmbCurrencyP As ComboBox
-    Friend WithEvents cmbCurrencyA As ComboBox
     Friend WithEvents label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents UAH1 As RadioButton
+    Friend WithEvents YEN1 As RadioButton
+    Friend WithEvents EURO1 As RadioButton
+    Friend WithEvents USD1 As RadioButton
+    Friend WithEvents UAH2 As RadioButton
+    Friend WithEvents YEN2 As RadioButton
+    Friend WithEvents EURO2 As RadioButton
+    Friend WithEvents USD2 As RadioButton
+    Friend WithEvents GBP1 As RadioButton
+    Friend WithEvents GBP2 As RadioButton
+    Friend WithEvents Change As Label
 End Class
