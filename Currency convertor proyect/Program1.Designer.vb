@@ -24,7 +24,6 @@ Partial Class Program1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Program1))
         Me.lstTransactions = New System.Windows.Forms.ListBox()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.label4 = New System.Windows.Forms.Label()
@@ -33,36 +32,27 @@ Partial Class Program1
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.USD = New System.Windows.Forms.RadioButton()
-        Me.EURO = New System.Windows.Forms.RadioButton()
-        Me.YEN = New System.Windows.Forms.RadioButton()
-        Me.UAH = New System.Windows.Forms.RadioButton()
         Me.Change = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.chcUSD = New System.Windows.Forms.CheckBox()
+        Me.chcYEN = New System.Windows.Forms.CheckBox()
+        Me.chcEURO = New System.Windows.Forms.CheckBox()
+        Me.chcUAH = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lstTransactions
         '
         Me.lstTransactions.FormattingEnabled = True
-        Me.lstTransactions.Location = New System.Drawing.Point(522, 150)
+        Me.lstTransactions.Location = New System.Drawing.Point(526, 128)
         Me.lstTransactions.Name = "lstTransactions"
         Me.lstTransactions.Size = New System.Drawing.Size(192, 212)
         Me.lstTransactions.TabIndex = 33
         '
-        'btnSave
-        '
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(316, 383)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(131, 32)
-        Me.btnSave.TabIndex = 32
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
         'btnReset
         '
         Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.Location = New System.Drawing.Point(146, 383)
+        Me.btnReset.Location = New System.Drawing.Point(21, 406)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(136, 32)
         Me.btnReset.TabIndex = 30
@@ -136,50 +126,6 @@ Partial Class Program1
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
-        'USD
-        '
-        Me.USD.AutoSize = True
-        Me.USD.Location = New System.Drawing.Point(426, 60)
-        Me.USD.Name = "USD"
-        Me.USD.Size = New System.Drawing.Size(48, 17)
-        Me.USD.TabIndex = 34
-        Me.USD.TabStop = True
-        Me.USD.Text = "USD"
-        Me.USD.UseVisualStyleBackColor = True
-        '
-        'EURO
-        '
-        Me.EURO.AutoSize = True
-        Me.EURO.Location = New System.Drawing.Point(426, 83)
-        Me.EURO.Name = "EURO"
-        Me.EURO.Size = New System.Drawing.Size(56, 17)
-        Me.EURO.TabIndex = 35
-        Me.EURO.TabStop = True
-        Me.EURO.Text = "EURO"
-        Me.EURO.UseVisualStyleBackColor = True
-        '
-        'YEN
-        '
-        Me.YEN.AutoSize = True
-        Me.YEN.Location = New System.Drawing.Point(426, 105)
-        Me.YEN.Name = "YEN"
-        Me.YEN.Size = New System.Drawing.Size(47, 17)
-        Me.YEN.TabIndex = 36
-        Me.YEN.TabStop = True
-        Me.YEN.Text = "YEN"
-        Me.YEN.UseVisualStyleBackColor = True
-        '
-        'UAH
-        '
-        Me.UAH.AutoSize = True
-        Me.UAH.Location = New System.Drawing.Point(426, 128)
-        Me.UAH.Name = "UAH"
-        Me.UAH.Size = New System.Drawing.Size(48, 17)
-        Me.UAH.TabIndex = 37
-        Me.UAH.TabStop = True
-        Me.UAH.Text = "UAH"
-        Me.UAH.UseVisualStyleBackColor = True
-        '
         'Change
         '
         Me.Change.AutoSize = True
@@ -189,18 +135,68 @@ Partial Class Program1
         Me.Change.Size = New System.Drawing.Size(0, 37)
         Me.Change.TabIndex = 38
         '
+        'btnBack
+        '
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(656, 368)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(104, 32)
+        Me.btnBack.TabIndex = 39
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'chcUSD
+        '
+        Me.chcUSD.AutoSize = True
+        Me.chcUSD.Location = New System.Drawing.Point(431, 58)
+        Me.chcUSD.Name = "chcUSD"
+        Me.chcUSD.Size = New System.Drawing.Size(49, 17)
+        Me.chcUSD.TabIndex = 42
+        Me.chcUSD.Text = "USD"
+        Me.chcUSD.UseVisualStyleBackColor = True
+        '
+        'chcYEN
+        '
+        Me.chcYEN.AutoSize = True
+        Me.chcYEN.Location = New System.Drawing.Point(431, 104)
+        Me.chcYEN.Name = "chcYEN"
+        Me.chcYEN.Size = New System.Drawing.Size(48, 17)
+        Me.chcYEN.TabIndex = 43
+        Me.chcYEN.Text = "YEN"
+        Me.chcYEN.UseVisualStyleBackColor = True
+        '
+        'chcEURO
+        '
+        Me.chcEURO.AutoSize = True
+        Me.chcEURO.Location = New System.Drawing.Point(431, 81)
+        Me.chcEURO.Name = "chcEURO"
+        Me.chcEURO.Size = New System.Drawing.Size(57, 17)
+        Me.chcEURO.TabIndex = 44
+        Me.chcEURO.Text = "EURO"
+        Me.chcEURO.UseVisualStyleBackColor = True
+        '
+        'chcUAH
+        '
+        Me.chcUAH.AutoSize = True
+        Me.chcUAH.Location = New System.Drawing.Point(431, 128)
+        Me.chcUAH.Name = "chcUAH"
+        Me.chcUAH.Size = New System.Drawing.Size(49, 17)
+        Me.chcUAH.TabIndex = 45
+        Me.chcUAH.Text = "UAH"
+        Me.chcUAH.UseVisualStyleBackColor = True
+        '
         'Program1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.chcUAH)
+        Me.Controls.Add(Me.chcEURO)
+        Me.Controls.Add(Me.chcYEN)
+        Me.Controls.Add(Me.chcUSD)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Change)
-        Me.Controls.Add(Me.UAH)
-        Me.Controls.Add(Me.YEN)
-        Me.Controls.Add(Me.EURO)
-        Me.Controls.Add(Me.USD)
         Me.Controls.Add(Me.lstTransactions)
-        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.label4)
@@ -218,7 +214,6 @@ Partial Class Program1
     End Sub
 
     Friend WithEvents lstTransactions As ListBox
-    Friend WithEvents btnSave As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents label4 As Label
@@ -227,9 +222,10 @@ Partial Class Program1
     Friend WithEvents label2 As Label
     Friend WithEvents label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents USD As RadioButton
-    Friend WithEvents EURO As RadioButton
-    Friend WithEvents YEN As RadioButton
-    Friend WithEvents UAH As RadioButton
     Friend WithEvents Change As Label
+    Friend WithEvents btnBack As Button
+    Friend WithEvents chcUSD As CheckBox
+    Friend WithEvents chcYEN As CheckBox
+    Friend WithEvents chcEURO As CheckBox
+    Friend WithEvents chcUAH As CheckBox
 End Class

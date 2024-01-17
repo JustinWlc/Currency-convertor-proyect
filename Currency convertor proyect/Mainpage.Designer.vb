@@ -74,17 +74,17 @@ Partial Class Mainpage
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Yi Baiti", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(129, 193)
+        Me.Label1.Location = New System.Drawing.Point(189, 226)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(429, 66)
+        Me.Label1.Size = New System.Drawing.Size(325, 33)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Please enter your name for store" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "       your transactions "
+        Me.Label1.Text = "Please enter your name "
         '
         'lbltitle
         '
         Me.lbltitle.AutoSize = True
         Me.lbltitle.Font = New System.Drawing.Font("Microsoft Tai Le", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltitle.Location = New System.Drawing.Point(71, 115)
+        Me.lbltitle.Location = New System.Drawing.Point(87, 129)
         Me.lbltitle.Name = "lbltitle"
         Me.lbltitle.Size = New System.Drawing.Size(547, 45)
         Me.lbltitle.TabIndex = 6

@@ -24,7 +24,6 @@ Partial Class Program2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Program2))
         Me.lstTransactions = New System.Windows.Forms.ListBox()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.label4 = New System.Windows.Forms.Label()
@@ -33,17 +32,16 @@ Partial Class Program2
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.UAH1 = New System.Windows.Forms.RadioButton()
-        Me.YEN1 = New System.Windows.Forms.RadioButton()
-        Me.EURO1 = New System.Windows.Forms.RadioButton()
-        Me.USD1 = New System.Windows.Forms.RadioButton()
-        Me.UAH2 = New System.Windows.Forms.RadioButton()
-        Me.YEN2 = New System.Windows.Forms.RadioButton()
-        Me.EURO2 = New System.Windows.Forms.RadioButton()
-        Me.USD2 = New System.Windows.Forms.RadioButton()
-        Me.GBP1 = New System.Windows.Forms.RadioButton()
-        Me.GBP2 = New System.Windows.Forms.RadioButton()
         Me.Change = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.chcGBP1 = New System.Windows.Forms.CheckBox()
+        Me.chcUSD1 = New System.Windows.Forms.CheckBox()
+        Me.chcEURO1 = New System.Windows.Forms.CheckBox()
+        Me.chcYEN1 = New System.Windows.Forms.CheckBox()
+        Me.chcYEN2 = New System.Windows.Forms.CheckBox()
+        Me.chcEURO2 = New System.Windows.Forms.CheckBox()
+        Me.chcUSD2 = New System.Windows.Forms.CheckBox()
+        Me.chcGBP2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,16 +52,6 @@ Partial Class Program2
         Me.lstTransactions.Name = "lstTransactions"
         Me.lstTransactions.Size = New System.Drawing.Size(192, 212)
         Me.lstTransactions.TabIndex = 47
-        '
-        'btnSave
-        '
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(295, 383)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(152, 32)
-        Me.btnSave.TabIndex = 46
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
         '
         'btnReset
         '
@@ -142,116 +130,6 @@ Partial Class Program2
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False
         '
-        'UAH1
-        '
-        Me.UAH1.AutoSize = True
-        Me.UAH1.Location = New System.Drawing.Point(412, 102)
-        Me.UAH1.Name = "UAH1"
-        Me.UAH1.Size = New System.Drawing.Size(48, 17)
-        Me.UAH1.TabIndex = 51
-        Me.UAH1.TabStop = True
-        Me.UAH1.Text = "UAH"
-        Me.UAH1.UseVisualStyleBackColor = True
-        '
-        'YEN1
-        '
-        Me.YEN1.AutoSize = True
-        Me.YEN1.Location = New System.Drawing.Point(412, 79)
-        Me.YEN1.Name = "YEN1"
-        Me.YEN1.Size = New System.Drawing.Size(47, 17)
-        Me.YEN1.TabIndex = 50
-        Me.YEN1.TabStop = True
-        Me.YEN1.Text = "YEN"
-        Me.YEN1.UseVisualStyleBackColor = True
-        '
-        'EURO1
-        '
-        Me.EURO1.AutoSize = True
-        Me.EURO1.Location = New System.Drawing.Point(412, 57)
-        Me.EURO1.Name = "EURO1"
-        Me.EURO1.Size = New System.Drawing.Size(56, 17)
-        Me.EURO1.TabIndex = 49
-        Me.EURO1.TabStop = True
-        Me.EURO1.Text = "EURO"
-        Me.EURO1.UseVisualStyleBackColor = True
-        '
-        'USD1
-        '
-        Me.USD1.AutoSize = True
-        Me.USD1.Location = New System.Drawing.Point(412, 34)
-        Me.USD1.Name = "USD1"
-        Me.USD1.Size = New System.Drawing.Size(48, 17)
-        Me.USD1.TabIndex = 48
-        Me.USD1.TabStop = True
-        Me.USD1.Text = "USD"
-        Me.USD1.UseVisualStyleBackColor = True
-        '
-        'UAH2
-        '
-        Me.UAH2.AutoSize = True
-        Me.UAH2.Location = New System.Drawing.Point(138, 102)
-        Me.UAH2.Name = "UAH2"
-        Me.UAH2.Size = New System.Drawing.Size(48, 17)
-        Me.UAH2.TabIndex = 55
-        Me.UAH2.TabStop = True
-        Me.UAH2.Text = "UAH"
-        Me.UAH2.UseVisualStyleBackColor = True
-        '
-        'YEN2
-        '
-        Me.YEN2.AutoSize = True
-        Me.YEN2.Location = New System.Drawing.Point(138, 79)
-        Me.YEN2.Name = "YEN2"
-        Me.YEN2.Size = New System.Drawing.Size(47, 17)
-        Me.YEN2.TabIndex = 54
-        Me.YEN2.TabStop = True
-        Me.YEN2.Text = "YEN"
-        Me.YEN2.UseVisualStyleBackColor = True
-        '
-        'EURO2
-        '
-        Me.EURO2.AutoSize = True
-        Me.EURO2.Location = New System.Drawing.Point(138, 57)
-        Me.EURO2.Name = "EURO2"
-        Me.EURO2.Size = New System.Drawing.Size(56, 17)
-        Me.EURO2.TabIndex = 53
-        Me.EURO2.TabStop = True
-        Me.EURO2.Text = "EURO"
-        Me.EURO2.UseVisualStyleBackColor = True
-        '
-        'USD2
-        '
-        Me.USD2.AutoSize = True
-        Me.USD2.Location = New System.Drawing.Point(138, 34)
-        Me.USD2.Name = "USD2"
-        Me.USD2.Size = New System.Drawing.Size(48, 17)
-        Me.USD2.TabIndex = 52
-        Me.USD2.TabStop = True
-        Me.USD2.Text = "USD"
-        Me.USD2.UseVisualStyleBackColor = True
-        '
-        'GBP1
-        '
-        Me.GBP1.AutoSize = True
-        Me.GBP1.Location = New System.Drawing.Point(412, 125)
-        Me.GBP1.Name = "GBP1"
-        Me.GBP1.Size = New System.Drawing.Size(47, 17)
-        Me.GBP1.TabIndex = 56
-        Me.GBP1.TabStop = True
-        Me.GBP1.Text = "GBP"
-        Me.GBP1.UseVisualStyleBackColor = True
-        '
-        'GBP2
-        '
-        Me.GBP2.AutoSize = True
-        Me.GBP2.Location = New System.Drawing.Point(138, 125)
-        Me.GBP2.Name = "GBP2"
-        Me.GBP2.Size = New System.Drawing.Size(47, 17)
-        Me.GBP2.TabIndex = 57
-        Me.GBP2.TabStop = True
-        Me.GBP2.Text = "GBP"
-        Me.GBP2.UseVisualStyleBackColor = True
-        '
         'Change
         '
         Me.Change.AutoSize = True
@@ -261,22 +139,110 @@ Partial Class Program2
         Me.Change.Size = New System.Drawing.Size(0, 37)
         Me.Change.TabIndex = 58
         '
+        'btnSave
+        '
+        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.Location = New System.Drawing.Point(295, 383)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(152, 32)
+        Me.btnSave.TabIndex = 46
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'chcGBP1
+        '
+        Me.chcGBP1.AutoSize = True
+        Me.chcGBP1.Location = New System.Drawing.Point(145, 32)
+        Me.chcGBP1.Name = "chcGBP1"
+        Me.chcGBP1.Size = New System.Drawing.Size(48, 17)
+        Me.chcGBP1.TabIndex = 59
+        Me.chcGBP1.Text = "GBP"
+        Me.chcGBP1.UseVisualStyleBackColor = True
+        '
+        'chcUSD1
+        '
+        Me.chcUSD1.AutoSize = True
+        Me.chcUSD1.Location = New System.Drawing.Point(145, 55)
+        Me.chcUSD1.Name = "chcUSD1"
+        Me.chcUSD1.Size = New System.Drawing.Size(49, 17)
+        Me.chcUSD1.TabIndex = 60
+        Me.chcUSD1.Text = "USD"
+        Me.chcUSD1.UseVisualStyleBackColor = True
+        '
+        'chcEURO1
+        '
+        Me.chcEURO1.AutoSize = True
+        Me.chcEURO1.Location = New System.Drawing.Point(145, 78)
+        Me.chcEURO1.Name = "chcEURO1"
+        Me.chcEURO1.Size = New System.Drawing.Size(57, 17)
+        Me.chcEURO1.TabIndex = 61
+        Me.chcEURO1.Text = "EURO"
+        Me.chcEURO1.UseVisualStyleBackColor = True
+        '
+        'chcYEN1
+        '
+        Me.chcYEN1.AutoSize = True
+        Me.chcYEN1.Location = New System.Drawing.Point(145, 101)
+        Me.chcYEN1.Name = "chcYEN1"
+        Me.chcYEN1.Size = New System.Drawing.Size(48, 17)
+        Me.chcYEN1.TabIndex = 62
+        Me.chcYEN1.Text = "YEN"
+        Me.chcYEN1.UseVisualStyleBackColor = True
+        '
+        'chcYEN2
+        '
+        Me.chcYEN2.AutoSize = True
+        Me.chcYEN2.Location = New System.Drawing.Point(399, 101)
+        Me.chcYEN2.Name = "chcYEN2"
+        Me.chcYEN2.Size = New System.Drawing.Size(48, 17)
+        Me.chcYEN2.TabIndex = 66
+        Me.chcYEN2.Text = "YEN"
+        Me.chcYEN2.UseVisualStyleBackColor = True
+        '
+        'chcEURO2
+        '
+        Me.chcEURO2.AutoSize = True
+        Me.chcEURO2.Location = New System.Drawing.Point(399, 78)
+        Me.chcEURO2.Name = "chcEURO2"
+        Me.chcEURO2.Size = New System.Drawing.Size(57, 17)
+        Me.chcEURO2.TabIndex = 65
+        Me.chcEURO2.Text = "EURO"
+        Me.chcEURO2.UseVisualStyleBackColor = True
+        '
+        'chcUSD2
+        '
+        Me.chcUSD2.AutoSize = True
+        Me.chcUSD2.Location = New System.Drawing.Point(399, 55)
+        Me.chcUSD2.Name = "chcUSD2"
+        Me.chcUSD2.Size = New System.Drawing.Size(49, 17)
+        Me.chcUSD2.TabIndex = 64
+        Me.chcUSD2.Text = "USD"
+        Me.chcUSD2.UseVisualStyleBackColor = True
+        '
+        'chcGBP2
+        '
+        Me.chcGBP2.AutoSize = True
+        Me.chcGBP2.Location = New System.Drawing.Point(399, 32)
+        Me.chcGBP2.Name = "chcGBP2"
+        Me.chcGBP2.Size = New System.Drawing.Size(48, 17)
+        Me.chcGBP2.TabIndex = 63
+        Me.chcGBP2.Text = "GBP"
+        Me.chcGBP2.UseVisualStyleBackColor = True
+        '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.chcYEN2)
+        Me.Controls.Add(Me.chcEURO2)
+        Me.Controls.Add(Me.chcUSD2)
+        Me.Controls.Add(Me.chcGBP2)
+        Me.Controls.Add(Me.chcYEN1)
+        Me.Controls.Add(Me.chcEURO1)
+        Me.Controls.Add(Me.chcUSD1)
+        Me.Controls.Add(Me.chcGBP1)
         Me.Controls.Add(Me.Change)
-        Me.Controls.Add(Me.GBP2)
-        Me.Controls.Add(Me.GBP1)
-        Me.Controls.Add(Me.UAH2)
-        Me.Controls.Add(Me.YEN2)
-        Me.Controls.Add(Me.EURO2)
-        Me.Controls.Add(Me.USD2)
-        Me.Controls.Add(Me.UAH1)
-        Me.Controls.Add(Me.YEN1)
-        Me.Controls.Add(Me.EURO1)
-        Me.Controls.Add(Me.USD1)
         Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnReset)
@@ -296,7 +262,6 @@ Partial Class Program2
     End Sub
 
     Friend WithEvents lstTransactions As ListBox
-    Friend WithEvents btnSave As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents label4 As Label
@@ -305,15 +270,14 @@ Partial Class Program2
     Friend WithEvents label2 As Label
     Friend WithEvents label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents UAH1 As RadioButton
-    Friend WithEvents YEN1 As RadioButton
-    Friend WithEvents EURO1 As RadioButton
-    Friend WithEvents USD1 As RadioButton
-    Friend WithEvents UAH2 As RadioButton
-    Friend WithEvents YEN2 As RadioButton
-    Friend WithEvents EURO2 As RadioButton
-    Friend WithEvents USD2 As RadioButton
-    Friend WithEvents GBP1 As RadioButton
-    Friend WithEvents GBP2 As RadioButton
     Friend WithEvents Change As Label
+    Friend WithEvents btnSave As Button
+    Friend WithEvents chcGBP1 As CheckBox
+    Friend WithEvents chcUSD1 As CheckBox
+    Friend WithEvents chcEURO1 As CheckBox
+    Friend WithEvents chcYEN1 As CheckBox
+    Friend WithEvents chcYEN2 As CheckBox
+    Friend WithEvents chcEURO2 As CheckBox
+    Friend WithEvents chcUSD2 As CheckBox
+    Friend WithEvents chcGBP2 As CheckBox
 End Class

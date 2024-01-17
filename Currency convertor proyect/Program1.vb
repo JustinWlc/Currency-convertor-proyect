@@ -1,5 +1,5 @@
 ﻿Public Class Program1
-    Private Sub USD_CheckedChanged(sender As Object, e As EventArgs) Handles USD.CheckedChanged
+    Private Sub chcUSD_CheckedChanged(sender As Object, e As EventArgs) Handles chcUSD.CheckedChanged
         Dim Amount As Decimal
         Dim USD As Decimal
 
@@ -8,9 +8,16 @@
 
         USD = Amount * 1.206
         Change.Text = USD
+
+        If chcUSD.Checked Then
+            Dim text2add As String
+
+            text2add = "USD-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            lstTransactions.Items.Add(text2add)
+        End If
     End Sub
 
-    Private Sub EURO_CheckedChanged(sender As Object, e As EventArgs) Handles EURO.CheckedChanged
+    Private Sub chcEURO_CheckedChanged(sender As Object, e As EventArgs) Handles chcEURO.CheckedChanged
         Dim Amount As Decimal
         Dim EURO As Decimal
 
@@ -19,9 +26,15 @@
         EURO = Amount * 1.16
         Change.Text = EURO
 
+        If chcEURO.Checked Then
+            Dim text2add As String
+
+            text2add = "EURO-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            lstTransactions.Items.Add(text2add)
+        End If
     End Sub
 
-    Private Sub YEN_CheckedChanged(sender As Object, e As EventArgs) Handles YEN.CheckedChanged
+    Private Sub chcYEN_CheckedChanged(sender As Object, e As EventArgs) Handles chcYEN.CheckedChanged
         Dim Amount As Decimal
         Dim YEN As Decimal
 
@@ -30,9 +43,15 @@
         YEN = Amount * 184.97
         Change.Text = YEN
 
+        If chcYEN.Checked Then
+            Dim text2add As String
+
+            text2add = "YEN-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            lstTransactions.Items.Add(text2add)
+        End If
     End Sub
 
-    Private Sub UAH_CheckedChanged(sender As Object, e As EventArgs) Handles UAH.CheckedChanged
+    Private Sub chcUAH_CheckedChanged(sender As Object, e As EventArgs) Handles chcUAH.CheckedChanged
         Dim Amount As Decimal
         Dim UAH As Decimal
 
@@ -41,14 +60,18 @@
         UAH = Amount * 45.5
 
         Change.Text = UAH
+        If chcUAH.Checked Then
+            Dim text2add As String
+
+            text2add = "UAH-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            lstTransactions.Items.Add(text2add)
+        End If
 
     End Sub
-
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         ResetText()
         Change.ResetText()
         txtAmount.ResetText()
-
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
@@ -56,7 +79,7 @@
 
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        lstTransactions.Items.Add(Name, txtAmount,  )
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Selection.Show()
     End Sub
 End Class
