@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Program2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Program2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Program2))
         Me.lstTransactions = New System.Windows.Forms.ListBox()
@@ -32,23 +32,19 @@ Partial Class Program2
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Change = New System.Windows.Forms.Label()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.chcGBP1 = New System.Windows.Forms.CheckBox()
+        Me.chcUAH1 = New System.Windows.Forms.CheckBox()
         Me.chcUSD1 = New System.Windows.Forms.CheckBox()
         Me.chcEURO1 = New System.Windows.Forms.CheckBox()
         Me.chcYEN1 = New System.Windows.Forms.CheckBox()
-        Me.chcYEN2 = New System.Windows.Forms.CheckBox()
-        Me.chcEURO2 = New System.Windows.Forms.CheckBox()
-        Me.chcUSD2 = New System.Windows.Forms.CheckBox()
-        Me.chcGBP2 = New System.Windows.Forms.CheckBox()
+        Me.Change = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lstTransactions
         '
         Me.lstTransactions.FormattingEnabled = True
-        Me.lstTransactions.Location = New System.Drawing.Point(520, 149)
+        Me.lstTransactions.Location = New System.Drawing.Point(507, 125)
         Me.lstTransactions.Name = "lstTransactions"
         Me.lstTransactions.Size = New System.Drawing.Size(192, 212)
         Me.lstTransactions.TabIndex = 47
@@ -106,9 +102,9 @@ Partial Class Program2
         Me.label2.Font = New System.Drawing.Font("Microsoft Himalaya", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label2.Location = New System.Drawing.Point(360, 63)
         Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(37, 29)
+        Me.label2.Size = New System.Drawing.Size(84, 29)
         Me.label2.TabIndex = 38
-        Me.label2.Text = "To"
+        Me.label2.Text = "To GBP"
         '
         'label1
         '
@@ -130,34 +126,15 @@ Partial Class Program2
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False
         '
-        'Change
+        'chcUAH1
         '
-        Me.Change.AutoSize = True
-        Me.Change.Font = New System.Drawing.Font("Microsoft Himalaya", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Change.Location = New System.Drawing.Point(256, 260)
-        Me.Change.Name = "Change"
-        Me.Change.Size = New System.Drawing.Size(0, 37)
-        Me.Change.TabIndex = 58
-        '
-        'btnSave
-        '
-        Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(295, 383)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(152, 32)
-        Me.btnSave.TabIndex = 46
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'chcGBP1
-        '
-        Me.chcGBP1.AutoSize = True
-        Me.chcGBP1.Location = New System.Drawing.Point(145, 32)
-        Me.chcGBP1.Name = "chcGBP1"
-        Me.chcGBP1.Size = New System.Drawing.Size(48, 17)
-        Me.chcGBP1.TabIndex = 59
-        Me.chcGBP1.Text = "GBP"
-        Me.chcGBP1.UseVisualStyleBackColor = True
+        Me.chcUAH1.AutoSize = True
+        Me.chcUAH1.Location = New System.Drawing.Point(145, 32)
+        Me.chcUAH1.Name = "chcUAH1"
+        Me.chcUAH1.Size = New System.Drawing.Size(49, 17)
+        Me.chcUAH1.TabIndex = 59
+        Me.chcUAH1.Text = "UAH"
+        Me.chcUAH1.UseVisualStyleBackColor = True
         '
         'chcUSD1
         '
@@ -189,62 +166,36 @@ Partial Class Program2
         Me.chcYEN1.Text = "YEN"
         Me.chcYEN1.UseVisualStyleBackColor = True
         '
-        'chcYEN2
+        'Change
         '
-        Me.chcYEN2.AutoSize = True
-        Me.chcYEN2.Location = New System.Drawing.Point(399, 101)
-        Me.chcYEN2.Name = "chcYEN2"
-        Me.chcYEN2.Size = New System.Drawing.Size(48, 17)
-        Me.chcYEN2.TabIndex = 66
-        Me.chcYEN2.Text = "YEN"
-        Me.chcYEN2.UseVisualStyleBackColor = True
+        Me.Change.AutoSize = True
+        Me.Change.Location = New System.Drawing.Point(256, 268)
+        Me.Change.Name = "Change"
+        Me.Change.Size = New System.Drawing.Size(0, 13)
+        Me.Change.TabIndex = 63
         '
-        'chcEURO2
+        'btnBack
         '
-        Me.chcEURO2.AutoSize = True
-        Me.chcEURO2.Location = New System.Drawing.Point(399, 78)
-        Me.chcEURO2.Name = "chcEURO2"
-        Me.chcEURO2.Size = New System.Drawing.Size(57, 17)
-        Me.chcEURO2.TabIndex = 65
-        Me.chcEURO2.Text = "EURO"
-        Me.chcEURO2.UseVisualStyleBackColor = True
-        '
-        'chcUSD2
-        '
-        Me.chcUSD2.AutoSize = True
-        Me.chcUSD2.Location = New System.Drawing.Point(399, 55)
-        Me.chcUSD2.Name = "chcUSD2"
-        Me.chcUSD2.Size = New System.Drawing.Size(49, 17)
-        Me.chcUSD2.TabIndex = 64
-        Me.chcUSD2.Text = "USD"
-        Me.chcUSD2.UseVisualStyleBackColor = True
-        '
-        'chcGBP2
-        '
-        Me.chcGBP2.AutoSize = True
-        Me.chcGBP2.Location = New System.Drawing.Point(399, 32)
-        Me.chcGBP2.Name = "chcGBP2"
-        Me.chcGBP2.Size = New System.Drawing.Size(48, 17)
-        Me.chcGBP2.TabIndex = 63
-        Me.chcGBP2.Text = "GBP"
-        Me.chcGBP2.UseVisualStyleBackColor = True
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Location = New System.Drawing.Point(621, 368)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(104, 32)
+        Me.btnBack.TabIndex = 64
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.chcYEN2)
-        Me.Controls.Add(Me.chcEURO2)
-        Me.Controls.Add(Me.chcUSD2)
-        Me.Controls.Add(Me.chcGBP2)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.Change)
         Me.Controls.Add(Me.chcYEN1)
         Me.Controls.Add(Me.chcEURO1)
         Me.Controls.Add(Me.chcUSD1)
-        Me.Controls.Add(Me.chcGBP1)
-        Me.Controls.Add(Me.Change)
+        Me.Controls.Add(Me.chcUAH1)
         Me.Controls.Add(Me.lstTransactions)
-        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.label4)
@@ -270,14 +221,10 @@ Partial Class Program2
     Friend WithEvents label2 As Label
     Friend WithEvents label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Change As Label
-    Friend WithEvents btnSave As Button
-    Friend WithEvents chcGBP1 As CheckBox
+    Friend WithEvents chcUAH1 As CheckBox
     Friend WithEvents chcUSD1 As CheckBox
     Friend WithEvents chcEURO1 As CheckBox
     Friend WithEvents chcYEN1 As CheckBox
-    Friend WithEvents chcYEN2 As CheckBox
-    Friend WithEvents chcEURO2 As CheckBox
-    Friend WithEvents chcUSD2 As CheckBox
-    Friend WithEvents chcGBP2 As CheckBox
+    Friend WithEvents Change As Label
+    Friend WithEvents btnBack As Button
 End Class

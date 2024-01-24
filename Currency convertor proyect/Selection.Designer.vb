@@ -57,21 +57,21 @@ Partial Class Selection
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Yi Baiti", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(212, 288)
+        Me.Label2.Location = New System.Drawing.Point(190, 288)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(470, 24)
+        Me.Label2.Size = New System.Drawing.Size(582, 24)
         Me.Label2.TabIndex = 12
-        Me.Label2.Text = " This program is going to convert any to any "
+        Me.Label2.Text = " This program is going to convert any currency to Pounds"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Yi Baiti", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(212, 226)
+        Me.Label1.Location = New System.Drawing.Point(190, 226)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(493, 24)
+        Me.Label1.Size = New System.Drawing.Size(580, 24)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = " This program is going to convert pound to any "
+        Me.Label1.Text = " This program is going to convert pounds to any currency"
         '
         'btnProgram2
         '
