@@ -6,6 +6,7 @@
         Amount = txtAmount.Text
 
         USD = Amount * 0.79
+
         Change.Text = USD
 
         If chcUSD1.Checked Then
@@ -69,6 +70,7 @@
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Selection.Show()
+        Me.Hide()
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click

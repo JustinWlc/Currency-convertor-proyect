@@ -23,11 +23,9 @@ Partial Class Program2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Program2))
-        Me.lstTransactions = New System.Windows.Forms.ListBox()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.label4 = New System.Windows.Forms.Label()
-        Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.label3 = New System.Windows.Forms.Label()
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
@@ -38,21 +36,15 @@ Partial Class Program2
         Me.chcYEN1 = New System.Windows.Forms.CheckBox()
         Me.Change = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.lstTransactions = New System.Windows.Forms.ListBox()
+        Me.txtAmount = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lstTransactions
-        '
-        Me.lstTransactions.FormattingEnabled = True
-        Me.lstTransactions.Location = New System.Drawing.Point(507, 125)
-        Me.lstTransactions.Name = "lstTransactions"
-        Me.lstTransactions.Size = New System.Drawing.Size(192, 212)
-        Me.lstTransactions.TabIndex = 47
         '
         'btnReset
         '
         Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.Location = New System.Drawing.Point(111, 383)
+        Me.btnReset.Location = New System.Drawing.Point(12, 406)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(145, 32)
         Me.btnReset.TabIndex = 44
@@ -62,7 +54,7 @@ Partial Class Program2
         'btnQuit
         '
         Me.btnQuit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnQuit.Location = New System.Drawing.Point(621, 406)
+        Me.btnQuit.Location = New System.Drawing.Point(684, 406)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(104, 32)
         Me.btnQuit.TabIndex = 43
@@ -73,24 +65,17 @@ Partial Class Program2
         '
         Me.label4.AutoSize = True
         Me.label4.Font = New System.Drawing.Font("Microsoft Himalaya", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label4.Location = New System.Drawing.Point(37, 260)
+        Me.label4.Location = New System.Drawing.Point(62, 255)
         Me.label4.Name = "label4"
         Me.label4.Size = New System.Drawing.Size(178, 37)
         Me.label4.TabIndex = 41
         Me.label4.Text = "Exchange Rate"
         '
-        'txtAmount
-        '
-        Me.txtAmount.Location = New System.Drawing.Point(263, 217)
-        Me.txtAmount.Name = "txtAmount"
-        Me.txtAmount.Size = New System.Drawing.Size(158, 20)
-        Me.txtAmount.TabIndex = 40
-        '
         'label3
         '
         Me.label3.AutoSize = True
         Me.label3.Font = New System.Drawing.Font("Microsoft Himalaya", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label3.Location = New System.Drawing.Point(69, 209)
+        Me.label3.Location = New System.Drawing.Point(99, 218)
         Me.label3.Name = "label3"
         Me.label3.Size = New System.Drawing.Size(103, 37)
         Me.label3.TabIndex = 39
@@ -100,7 +85,7 @@ Partial Class Program2
         '
         Me.label2.AutoSize = True
         Me.label2.Font = New System.Drawing.Font("Microsoft Himalaya", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label2.Location = New System.Drawing.Point(360, 63)
+        Me.label2.Location = New System.Drawing.Point(409, 80)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(84, 29)
         Me.label2.TabIndex = 38
@@ -110,7 +95,7 @@ Partial Class Program2
         '
         Me.label1.AutoSize = True
         Me.label1.Font = New System.Drawing.Font("Microsoft Himalaya", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(38, 63)
+        Me.label1.Location = New System.Drawing.Point(146, 77)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(94, 29)
         Me.label1.TabIndex = 35
@@ -119,7 +104,7 @@ Partial Class Program2
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(645, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(666, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(122, 94)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -129,7 +114,7 @@ Partial Class Program2
         'chcUAH1
         '
         Me.chcUAH1.AutoSize = True
-        Me.chcUAH1.Location = New System.Drawing.Point(145, 32)
+        Me.chcUAH1.Location = New System.Drawing.Point(253, 46)
         Me.chcUAH1.Name = "chcUAH1"
         Me.chcUAH1.Size = New System.Drawing.Size(49, 17)
         Me.chcUAH1.TabIndex = 59
@@ -139,7 +124,7 @@ Partial Class Program2
         'chcUSD1
         '
         Me.chcUSD1.AutoSize = True
-        Me.chcUSD1.Location = New System.Drawing.Point(145, 55)
+        Me.chcUSD1.Location = New System.Drawing.Point(253, 69)
         Me.chcUSD1.Name = "chcUSD1"
         Me.chcUSD1.Size = New System.Drawing.Size(49, 17)
         Me.chcUSD1.TabIndex = 60
@@ -149,7 +134,7 @@ Partial Class Program2
         'chcEURO1
         '
         Me.chcEURO1.AutoSize = True
-        Me.chcEURO1.Location = New System.Drawing.Point(145, 78)
+        Me.chcEURO1.Location = New System.Drawing.Point(253, 92)
         Me.chcEURO1.Name = "chcEURO1"
         Me.chcEURO1.Size = New System.Drawing.Size(57, 17)
         Me.chcEURO1.TabIndex = 61
@@ -159,7 +144,7 @@ Partial Class Program2
         'chcYEN1
         '
         Me.chcYEN1.AutoSize = True
-        Me.chcYEN1.Location = New System.Drawing.Point(145, 101)
+        Me.chcYEN1.Location = New System.Drawing.Point(253, 115)
         Me.chcYEN1.Name = "chcYEN1"
         Me.chcYEN1.Size = New System.Drawing.Size(48, 17)
         Me.chcYEN1.TabIndex = 62
@@ -177,29 +162,44 @@ Partial Class Program2
         'btnBack
         '
         Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(621, 368)
+        Me.btnBack.Location = New System.Drawing.Point(684, 368)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(104, 32)
         Me.btnBack.TabIndex = 64
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'lstTransactions
+        '
+        Me.lstTransactions.FormattingEnabled = True
+        Me.lstTransactions.Location = New System.Drawing.Point(512, 150)
+        Me.lstTransactions.Name = "lstTransactions"
+        Me.lstTransactions.Size = New System.Drawing.Size(221, 212)
+        Me.lstTransactions.TabIndex = 65
+        '
+        'txtAmount
+        '
+        Me.txtAmount.Location = New System.Drawing.Point(243, 226)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(149, 20)
+        Me.txtAmount.TabIndex = 66
+        '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtAmount)
+        Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Change)
         Me.Controls.Add(Me.chcYEN1)
         Me.Controls.Add(Me.chcEURO1)
         Me.Controls.Add(Me.chcUSD1)
         Me.Controls.Add(Me.chcUAH1)
-        Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.label4)
-        Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.label3)
         Me.Controls.Add(Me.label2)
         Me.Controls.Add(Me.label1)
@@ -211,12 +211,9 @@ Partial Class Program2
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lstTransactions As ListBox
     Friend WithEvents btnReset As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents label4 As Label
-    Friend WithEvents txtAmount As TextBox
     Friend WithEvents label3 As Label
     Friend WithEvents label2 As Label
     Friend WithEvents label1 As Label
@@ -227,4 +224,6 @@ Partial Class Program2
     Friend WithEvents chcYEN1 As CheckBox
     Friend WithEvents Change As Label
     Friend WithEvents btnBack As Button
+    Friend WithEvents lstTransactions As ListBox
+    Friend WithEvents txtAmount As TextBox
 End Class
