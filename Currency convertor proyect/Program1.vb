@@ -19,7 +19,7 @@
             Dim text2add As String
             'here we are decalring the variable'
 
-            text2add = "USD-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            text2add = "GBP-- " & txtAmount.Text & " -USD -- " & Change.Text
             'this is the text is going to show in the  list box'
 
             lstTransactions.Items.Add(text2add)
@@ -47,7 +47,7 @@
             Dim text2add As String
             'here we are decalring the variable'
 
-            text2add = "EURO-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            text2add = "GBP-- " & txtAmount.Text & " - EURO-- " & Change.Text
             'this is the text is going to show in the  list box'
 
             lstTransactions.Items.Add(text2add)
@@ -74,7 +74,7 @@
             Dim text2add As String
             'here we are decalring the variable'
 
-            text2add = "YEN-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            text2add = "GBP-- " & txtAmount.Text & " - YEN-- " & Change.Text
             'this is the text is going to show in the  list box'
 
             lstTransactions.Items.Add(text2add)
@@ -102,7 +102,7 @@
             Dim text2add As String
             'here we are decalring the variable'
 
-            text2add = "UAH-- " & txtAmount.Text & " - GBP-- " & Change.Text
+            text2add = "GBP-- " & txtAmount.Text & " - UAH-- " & Change.Text
             'this is the text is going to show in the  list box'
 
             lstTransactions.Items.Add(text2add)
@@ -126,5 +126,9 @@
         Selection.Show()
         Me.Hide()
         'when the other forms show this one will be hide'
+    End Sub
+
+    Private Sub Program1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

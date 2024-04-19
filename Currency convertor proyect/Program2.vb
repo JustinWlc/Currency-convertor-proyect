@@ -82,4 +82,8 @@
         Change.ResetText()
         txtAmount.ResetText()
     End Sub
+
+    Private Sub Program2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

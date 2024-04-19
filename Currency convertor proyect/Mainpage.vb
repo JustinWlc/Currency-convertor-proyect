@@ -15,4 +15,8 @@
         Application.Exit()
         'this will close the application'
     End Sub
+
+    Private Sub Mainpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
